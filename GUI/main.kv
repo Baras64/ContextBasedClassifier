@@ -1,0 +1,44 @@
+#: import FallOutTransition kivy.uix.screenmanager.FallOutTransition
+#: import FileChooser kivy.uix.filechooser.FileChooser
+#: import FileChooserListLayout kivy.uix.filechooser.FileChooserListLayout
+#: import utils kivy.utils
+#: import FileChooserIconLayout kivy.uix.filechooser.FileChooserIconLayout
+
+MainScreen:
+    FloatLayout:
+        Label:
+            text: "TOPIC DETECTION SYSTEM"
+            pos_hint: {'left': 0.5, 'top': 0.9}
+            size_hint_y: 0.1
+            font_size: 50
+        TextInput:
+            id: api_key
+            hint_text: "Insert your API key here"
+            pos_hint: {'right': 0.45, 'top': 0.75}
+            size_hint: 0.4, 0.1
+        TextInput:
+            id: text_data
+            hint_text: "Enter your text here"
+            size_hint: 0.6, 0.2
+            pos_hint: {'right': 0.65, 'top': 0.6}
+        TextInput:
+            id: prediction
+            hint_text: "OUTPUT WILL BE DISPLAYED HERE"
+            readonly: True
+            size_hint: 0.3, 0.1
+            pos_hint: {'right': 0.35, 'top': 0.35}
+        Button:
+            text: 'Predict'
+            size_hint: 0.2, 0.1
+            pos_hint: {'right': 0.25, 'top': 0.2}
+            on_press: root.predict(api_key, text_data, prediction)
+        Button:
+            text: 'Upload'
+            size_hint: 0.2, 0.1
+            pos_hint: {'right': 0.45, 'top': 0.2}
+            on_press: root.btn_touch_up()
+        Button:
+            text: 'Txt'
+            size_hint: 0.2, 0.1
+            pos_hint: {'right': 0.65, 'top': 0.2}
+            on_press: root.btn_touch_down()

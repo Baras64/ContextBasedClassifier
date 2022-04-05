@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>LoginPage</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h2>Topic Detection System</h2>
+<!--				<nav>-->
+<!--					<ul>-->
+<!--						<li><a href="index.html">Home</a></li>-->
+<!--						<li><a href="generic.html">Generic</a></li>-->
+<!--						<li><a href="elements.html"  class="active">Elements</a></li>-->
+<!--					</ul>-->
+<!--				</nav>-->
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Login</h1>
+
+							<!-- Form -->
+								<section>
+									<div class="container">
+										<div align="center">
+									<form method="post" action="{{url_for('check_data')}}">
+										<div class="row gtr-uniform">
+											<div class="col-6 col-12-xsmall">
+												<input type="email" name="email_id" id="email_id" value="" placeholder="Email Id" />
+											</div><br>
+											<div class="col-6 col-12-xsmall">
+												<input type="password" name="password" id="password" value="" placeholder="Password" />
+											</div><br>
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" value="Submit" class="primary" /></li>
+												</ul>
+												<a href="signup.html" >SIGN UP</a>
+											</div>
+										</div>
+									</form></div></div>
+								</section>
+
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
